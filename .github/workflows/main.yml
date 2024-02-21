@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Sync files
-      uses: ishmaelakaboa/studygrup@4
+      uses: ishmaelakaboa/studygrup@v4
       with: 
         server: ftp.studysmart.site
         username: ${{ secrets.USERNAME }}
