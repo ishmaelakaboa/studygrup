@@ -5,10 +5,12 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+SECRET_KEY='django-insecure-hpfekx_r+cyxo5kywyk)xee5$2victrjsyb-bv7vm_6y6#w-jj'
+DEBUG = False
 
-SECRET_KEY = config('THE_SECRET_KEY')
+# SECRET_KEY = config('THE_SECRET_KEY')
 
-DEBUG = config('MY_DEBUG', cast=bool)
+# DEBUG = config('MY_DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.vercel.app']
 
