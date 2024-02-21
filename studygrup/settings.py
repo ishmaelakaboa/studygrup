@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-hpfekx_r+cyxo5kywyk)xee5$2victrjsyb-bv7vm_6y6#w-jj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'studygrup-dev-akjh.1.us-1.fl0.io']
+
+CSRF_TRUSTED_ORIGINS = ['https://studygrup-dev-akjh.1.us-1.fl0.io']
+
 
 
 # Application definition
@@ -81,6 +84,9 @@ DATABASES = {
 }
 
 
+POSTGRES_LOCALLY = True
+if ENVIRONMENT == 'production' or POSTGRES_LOCALLY ==True:
+    DATABASES['default'] = dj_database_url.parse(env('DATASE_URL'))
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
