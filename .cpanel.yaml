@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/m87asyvs/studysmart.site
+    - /bin/cp * $DEPLOYPATH
