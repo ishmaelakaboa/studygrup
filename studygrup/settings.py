@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wt7%_r(ukkfom8mgk$e6c9wm)!@pjl3uw)$(hsra5bjm%9b!bv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['studysmart.site', 'loclahost', '127.0.0.1']
+ALLOWED_HOSTS = ['studysmart.site', 'www.studysmart.site', 'loclahost', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'base'
 ]
 
 MIDDLEWARE = [
